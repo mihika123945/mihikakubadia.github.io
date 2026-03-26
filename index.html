@@ -97,6 +97,30 @@
   }
 }
 
+/* Skill Tags Styling */
+.skill-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffbd39 0%, #ffa500 100%);
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 189, 57, 0.3);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 189, 57, 0.5);
+  background: linear-gradient(135deg, #ffa500 0%, #ffbd39 100%);
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+}
+
 
 /* project image zoom effect */
 
@@ -222,34 +246,41 @@
 							<div class="overlay">
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Python</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Machine Learning</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Natural Language Processing (NLP)</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Data Visualization (Power BI / Tableau / Plotly)</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Cloud Computing (AWS / Azure)</span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="skill-item mb-3">
+												<span class="skill-tag">SQL</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Deep Learning</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">LLMs & Generative AI</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Data Engineering (ETL, Pipelines)</span>
+											</div>
+											<div class="skill-item mb-3">
+												<span class="skill-tag">Statistical Analysis</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -263,15 +294,12 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>I’m a Master’s in Data Science graduate passionate about building data-driven solutions that create real-world impact.With expertise in statistical modeling, machine learning, and analytics, I specialize in crafting predictive models, recommendation systems, and intelligent dashboards to tackle complex business problems. I’m proficient in Python, SQL, and R, and experienced in tools like Power BI and Tableau.
-I thrive in fast-paced environments where I can blend AI, advanced analytics, and visualization to drive strategic decision-making. Adaptable, detail-oriented, and driven by curiosity, I aim to transform raw data into smart, scalable insights.</p>
+								<p>I'm a Master's student in Data Science at the University of Arizona with experience building AI, machine learning, and analytics solutions for real-world applications. My work spans predictive modeling, NLP, and data pipelines, with a focus on scalable systems and impactful insights. I enjoy combining data, AI, and visualization to solve complex business and research problems.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Master's in Data Science</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, DAX Studio,Power Query</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Stock Market Trading, Travel, Photography, Teaching,Dancing</span></li>
+									<li class="d-flex"><span>🎓</span> <span>M.S. Data Science – University of Arizona</span></li>
+									<li class="d-flex"><span>⭐</span> <span>GPA: 4.0</span></li>
+									<li class="d-flex"><span>🤖</span> <span>Focus: AI, ML, NLP,LLMs</span></li>
+									<li class="d-flex"><span>📍</span> <span>Based in USA</span></li>
 									
 								</ul>
 							</div>
