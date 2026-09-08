@@ -121,6 +121,103 @@
   align-items: center;
 }
 
+.hero-summary {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-actions .btn {
+  margin: 0;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-group .skill-tag {
+  border-radius: 8px;
+  padding: 7px 12px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.project-tag {
+  border: 1px solid rgba(255, 189, 57, 0.45);
+  color: #ffbd39;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 8px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.project-actions a {
+  color: #000;
+  background: #ffbd39;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-note {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.featured-project .blog-entry {
+  border: 1px solid rgba(255, 189, 57, 0.55);
+  padding: 12px;
+}
+
+@media (max-width: 767.98px) {
+  #typing-animation {
+    white-space: normal;
+    font-size: 23px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
 
 /* project image zoom effect */
 
@@ -163,8 +260,10 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -194,9 +293,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Data Analyst ',
-						'AL/ML Engineer ',
-						'Data Scientist  ',
+						'Applied AI ',
+						'Machine Learning ',
+						'Data Science ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -224,8 +323,14 @@
 						<br>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p>
-							<a href="https://github.com/mihika123945" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+						<h2 class="d-flex" style="margin-bottom: 14px">Applied AI, Machine Learning &amp; Data Science</h2>
+						<p class="hero-summary">Recent M.S. Data Science graduate from the University of Arizona with experience building AI-driven analytics, machine learning systems, data pipelines, dashboards, and decision-support tools using Python, SQL, LLMs, and cloud technologies.</p>
+			            <div class="hero-actions">
+							<a href="https://drive.google.com/file/d/1VSshD4IlwYtLH1T6ueX4e0NqTCruMUh8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">View Resume</a>
+							<a href="https://mihika123945.github.io/ORPA-Dashboard/" target="_blank" rel="noopener noreferrer" class="btn btn-white py-3 px-4">View ORPA Dashboard</a>
+							<a href="https://www.linkedin.com/in/mihika-kubadia/" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+							<a href="https://github.com/mihika123945" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+						</div>
 		            </div>
 		          </div>
 	        	</div>
@@ -244,42 +349,48 @@
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
-								<div class="skill-mf">
+								<div class="skill-mf" id="skills-section">
 									<p class="title-s">Skills</p>
-									<div class="row">
-										<div class="col-md-6">
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Python</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Machine Learning</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Natural Language Processing (NLP)</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Data Visualization (Power BI / Tableau / Plotly)</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Cloud Computing (AWS / Azure)</span>
-											</div>
+									<div class="skill-category">
+										<h3>AI / ML</h3>
+										<div class="skill-group">
+											<span class="skill-tag">Machine Learning</span>
+											<span class="skill-tag">Deep Learning</span>
+											<span class="skill-tag">LLMs</span>
+											<span class="skill-tag">NLP</span>
+											<span class="skill-tag">Scikit-learn</span>
+											<span class="skill-tag">TensorFlow</span>
+											<span class="skill-tag">LangChain</span>
 										</div>
-										<div class="col-md-6">
-											<div class="skill-item mb-3">
-												<span class="skill-tag">SQL</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Deep Learning</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">LLMs & Generative AI</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Data Engineering (ETL, Pipelines)</span>
-											</div>
-											<div class="skill-item mb-3">
-												<span class="skill-tag">Statistical Analysis</span>
-											</div>
+									</div>
+									<div class="skill-category">
+										<h3>Data</h3>
+										<div class="skill-group">
+											<span class="skill-tag">Python</span>
+											<span class="skill-tag">SQL</span>
+											<span class="skill-tag">Pandas</span>
+											<span class="skill-tag">NumPy</span>
+											<span class="skill-tag">ETL</span>
+											<span class="skill-tag">Data Pipelines</span>
+										</div>
+									</div>
+									<div class="skill-category">
+										<h3>Cloud / Engineering</h3>
+										<div class="skill-group">
+											<span class="skill-tag">AWS</span>
+											<span class="skill-tag">Azure</span>
+											<span class="skill-tag">Docker</span>
+											<span class="skill-tag">REST APIs</span>
+											<span class="skill-tag">Git</span>
+										</div>
+									</div>
+									<div class="skill-category">
+										<h3>Analytics</h3>
+										<div class="skill-group">
+											<span class="skill-tag">Power BI</span>
+											<span class="skill-tag">Tableau</span>
+											<span class="skill-tag">Statistical Analysis</span>
+											<span class="skill-tag">Data Visualization</span>
 										</div>
 									</div>
 								</div>
@@ -294,12 +405,14 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>I'm a Master's student in Data Science at the University of Arizona with experience building AI, machine learning, and analytics solutions for real-world applications. My work spans predictive modeling, NLP, and data pipelines, with a focus on scalable systems and impactful insights. I enjoy combining data, AI, and visualization to solve complex business and research problems.</p>
+								<p>I'm a recent M.S. Data Science graduate from the University of Arizona with experience building AI, machine learning, analytics, and data-driven systems across consulting, healthcare research, and financial technology.</p>
+								<p>My work includes LLM-powered workflows, machine learning models, data pipelines, dashboards, medical imaging, and cloud-based systems using Python, SQL, AWS, Azure, TensorFlow, LangChain, and related technologies.</p>
+								<p>I'm currently interested in full-time opportunities across Applied AI, Machine Learning, Data Science, and closely related data roles where I can build practical systems and turn complex data into useful products and decisions.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>🎓</span> <span>M.S. Data Science – University of Arizona</span></li>
-									<li class="d-flex"><span>⭐</span> <span>GPA: 4.0</span></li>
-									<li class="d-flex"><span>🤖</span> <span>Focus: AI, ML, NLP,LLMs</span></li>
-									<li class="d-flex"><span>📍</span> <span>Based in USA</span></li>
+									<li class="d-flex"><span>Education:</span> <span>M.S. Data Science, University of Arizona</span></li>
+									<li class="d-flex"><span>GPA:</span> <span>4.0</span></li>
+									<li class="d-flex"><span>Focus:</span> <span>Applied AI, ML, NLP, LLMs</span></li>
+									<li class="d-flex"><span>Location:</span> <span>USA</span></li>
 									
 								</ul>
 							</div>
@@ -309,10 +422,10 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
+									<span class="number" data-number="6">0</span>
+									<span>&nbsp; Featured projects</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/mihika-kubadia/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								<p><a href="https://www.linkedin.com/in/mihika-kubadia/" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -330,11 +443,11 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p> Data Scientist passionate about NLP, machine learning, and building AI-driven solutions that make an impact.</p>
+            <p>Applied AI and Data Science professional with experience across LLM systems, machine learning, analytics, data pipelines, and cloud-based workflows.</p>
           </div>
         </div>
 
-		<div class="row">
+		<div class="row" id="experience-section">
 			<h1 class="big-4">Experience</h1>
 			<div class="underline"></div>
 		</div>
@@ -344,13 +457,13 @@
 					<div class="resume-wrap ftco-animate">
 						<span class="date">January 2026 - May 2026</span>
 						<h2>Data Scientist</h2>
-						<span class="position">PwC, United States</span>
+						<span class="position">University of Arizona Eller Partnerships Office x PwC</span>
 						<!-- <p class="mt-4">PwC Data Science Role  -->
 							<ul>
-								<li>Built an ML-driven workforce planning platform integrating supply, demand, and pipeline data for predictive decision-making.</li>
-								<li>Developed capacity modeling and optimization logic to identify resource gaps and forecast constraints.</li>
-								<li>Designed interactive dashboards to visualize capacity-demand trends and support strategic planning.</li>
-								<li>Integrated an LLM-powered chatbot to generate explainable insights and answer "why" questions over structured data.</li>
+								<li>Collaborated with PwC through the Eller Partnerships Office to develop an AI-driven workforce planning solution integrating supply, demand, project, and pipeline data.</li>
+								<li>Analyzed 2,150 projects and 110 pipeline opportunities using Python and SQL to identify staffing capacity gaps, resource demand patterns, and workforce planning needs.</li>
+								<li>Developed analytical workflows and dashboards to transform complex multi-table enterprise data into actionable workforce planning and decision-support insights.</li>
+								<li>Integrated Claude through AWS Bedrock for natural-language interaction with structured workforce data while validating transformation logic and business rules to improve reliability.</li>
 							</ul>
 						</p>
 					</div>
@@ -362,40 +475,40 @@
 						<span class="position">University of Arizona, United States</span>
 						<!-- <p class="mt-4">Research Assistant at University of Arizona  -->
 							<ul>
-								<li>Built scalable AI infrastructure for breast cancer detection using the VICTRE simulation pipeline on HPC systems.</li>
-								<li>Developed Python pipelines to generate, process, and visualize large-scale synthetic mammogram data.</li>
-								<li>Applied Explainable AI (Grad-CAM) to interpret model predictions with clinical relevance.</li>
-								<li>Collaborated across research teams to integrate ML models with cloud-based workflows.</li>
+								<li>Built Python pipelines for breast cancer research using the VICTRE simulation workflow on high-performance computing systems.</li>
+								<li>Generated, processed, and visualized synthetic mammography data for medical imaging experiments.</li>
+								<li>Applied Grad-CAM to interpret model predictions and support clinically relevant review.</li>
+								<li>Collaborated with radiologists and multidisciplinary researchers on model evaluation and research workflows.</li>
 							</ul>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">June 2025- August 2025</span>
-						<h2>Data Analyst Intern</h2>
-						<span class="position">FISCALII</span>
+						<span class="date">June 2025 - August 2025</span>
+						<h2>Data Scientist</h2>
+						<span class="position">Fiscalii Inc</span>
 						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
 							<ul>
-								<li>Designed automated pipelines to extract and classify financial disclosures from SEC filings.</li>
-								<li>Built LLM-based workflows (GPT-4) to generate context-aware summaries of accounting data.</li>
-								<li>Reduced manual review time by 40% and increased analyst throughput significantly.</li>
-								<li>Improved extraction accuracy by 18%, enabling faster and more reliable decision-making.</li>
+								<li>Designed and deployed automated data extraction pipelines using Python, LLM APIs, and LangChain for financial document processing.</li>
+								<li>Containerized workloads using Docker and Azure Functions to improve scalability and reliability.</li>
+								<li>Built and maintained ingestion and processing workflows for large financial documents, reducing end-to-end latency by 40%.</li>
+								<li>Collaborated with engineering teams to improve ETL workflows, cloud infrastructure, and ML performance.</li>
 							</ul>
 						</p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">March 2024- August 2024</span>
-						<h2>Data Analyst Intern</h2>
-						<span class="position">COLLAB SOFTECH</span>
+						<span class="date">January 2024 - May 2024</span>
+						<h2>Data Analyst</h2>
+						<span class="position">Collab Softech</span>
 						<!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
 							<ul>
-								<li>Analyzed sales and customer data using SQL, Power BI, and DAX to generate business insights.</li>
-								<li>Built interactive dashboards to track sales performance and inventory trends.</li>
-								<li>Proposed cloud-based solutions to resolve API-driven data storage challenges.</li>
-								<li>Improved data retrieval speed and ensured data integrity through optimized pipelines.</li>
+								<li>Built SQL-based data pipelines and Azure workflows for data validation, transformation, and reporting automation.</li>
+								<li>Developed Power BI and DAX dashboards to track operational performance and business trends.</li>
+								<li>Improved query performance through optimized SQL logic and streamlined data retrieval workflows.</li>
+								<li>Supported reporting automation by validating transformed datasets and improving dashboard reliability.</li>
 							</ul>
 						</p>
 					</div>
@@ -437,7 +550,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-	    			<p><a href="https://drive.google.com/file/d/1b5sMxV3jJ1tCpKteAuOiSF7pxv0yvw2m/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+				<p><a href="https://drive.google.com/file/d/1VSshD4IlwYtLH1T6ueX4e0NqTCruMUh8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-4 px-5">View Resume</a></p>
     			</div>
     		</div>
     	</div>
@@ -451,69 +564,127 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL,NLP, Python, Power BI & ML.</p>
+            <p>Selected Applied AI, Machine Learning, Data Science, and analytics work.</p>
           </div>
         </div>
 		
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
+                <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate featured-project">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/mihika123945/Cinescope" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+              <a href="https://mihika123945.github.io/ORPA-Dashboard/" target="_blank" rel="noopener noreferrer" aria-label="Open ORPA Dashboard live demo" class="block-20 zoom-effect" style="background-image: url('images/bg_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/mihika123945/Cinescope">CineScope : Recommendations and Insights from IMDb Dataset</a></h3>
-                <p>Built a content-based recommendation system using IMDb data to uncover viewing trends and personalize user suggestions based on genre, ratings, and release year.</p>
+                <h3 class="heading"><a href="https://mihika123945.github.io/ORPA-Dashboard/" target="_blank" rel="noopener noreferrer">ORPA Dashboard</a></h3>
+                <p><strong>AI-Driven Workforce Planning and Analytics Dashboard.</strong> Interactive workforce planning platform integrating supply, demand, pipeline, capacity analysis, dashboards, and AI-assisted querying.</p>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Vite</span>
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">SQL</span>
+                  <span class="project-tag">AWS Bedrock</span>
+                  <span class="project-tag">Claude</span>
+                  <span class="project-tag">Analytics</span>
+                  <span class="project-tag">LLMs</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://mihika123945.github.io/ORPA-Dashboard/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a href="https://github.com/mihika123945/ORPA-Dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p class="project-note">Portfolio demo using synthetic data.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
-              </a>
+              <div aria-label="SERVES+ Data Visualization Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+              </div>
               <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing">Educational Videos in Focus: A Summary of Key Findings</a></h3>
-                <p>Developed an AI-powered system that transforms long educational YouTube videos into concise, informative short video by extracting key content using speech-to-text and NLP techniques.</p>
+                <h3 class="heading">SERVES+ Data Visualization Dashboard</h3>
+                <p>Processed 4,000+ REDCap records through an end-to-end pipeline with rule-based task generation, status classification, and an interactive monitoring dashboard that reduced manual effort by approximately 60%.</p>
+                <div class="project-tags">
+                  <span class="project-tag">REDCap</span>
+                  <span class="project-tag">Data Pipelines</span>
+                  <span class="project-tag">Dashboards</span>
+                  <span class="project-tag">Automation</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://www.mdpi.com/2673-4591/59/1/144" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+              <a href="https://www.mdpi.com/2673-4591/59/1/144" target="_blank" rel="noopener noreferrer" aria-label="Open brain tumor MRI classification publication" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://www.mdpi.com/2673-4591/59/1/144">Classification of Brain Tumours using MRI Images</a></h3>
-                <p>Developed a deep learning-based system using transfer learning and CNNs to accurately classify brain tumors from MRI images, achieving 99.93% accuracy and earning the Best Paper Award at RAiSE-2023.</p>
+                <h3 class="heading"><a href="https://www.mdpi.com/2673-4591/59/1/144" target="_blank" rel="noopener noreferrer">Brain Tumor MRI Classification</a></h3>
+                <p>Built a TensorFlow/Keras MRI classification system using ResNet-50, VGG-16, and Inception-V3, with 99.93% reported classification accuracy and Best Paper recognition.</p>
+                <div class="project-tags">
+                  <span class="project-tag">TensorFlow</span>
+                  <span class="project-tag">Keras</span>
+                  <span class="project-tag">ResNet-50</span>
+                  <span class="project-tag">VGG-16</span>
+                  <span class="project-tag">Inception-V3</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://www.mdpi.com/2673-4591/59/1/144" target="_blank" rel="noopener noreferrer">Publication</a>
+                </div>
               </div>
             </div>
           </div>
-		  
         </div>
 
 	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
+		<div class="row d-flex">
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/mihika123945/Stock-price-prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
+				<div aria-label="Bayesian Climate Reconstruction" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</div>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/mihika123945/Stock-price-prediction">StockSage – Smart predictions for smarter investments</a></h3>
-				  <p>Built a Streamlit-powered application that predicts stock price trends using LSTM and visualizes historical patterns alongside daily financial news</p>
+				  <h3 class="heading">Bayesian Climate Reconstruction</h3>
+				  <p>Reconstructed climate signals using R and Stan/brms with 230 tree-ring proxies, a spatial point-to-pixel workflow, R squared of 0.97, and a blind hindcast of the 1913 volcanic cooling event.</p>
+				  <div class="project-tags">
+				    <span class="project-tag">R</span>
+				    <span class="project-tag">Stan</span>
+				    <span class="project-tag">brms</span>
+				    <span class="project-tag">Bayesian Modeling</span>
+				  </div>
 				</div>
 			  </div>
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/mihika123945/online-bookstore-management-system" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				<a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open Educational Videos in Focus project files" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/mihika123945/online-bookstore-management-system">Online Bookstore Management System</a></h3>
-				  <p>A comprehensive database project simulating an online bookstore system, featuring ER modeling, SQL implementation, and MongoDB-based NoSQL design for efficient data management and querying.</p>
+				  <h3 class="heading"><a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" target="_blank" rel="noopener noreferrer">Educational Videos in Focus</a></h3>
+				  <p>Created an NLP workflow for educational video summarization using speech-to-text, LangChain, TextRank, transformer summarization, clustering, and YouTube API integration.</p>
+				  <div class="project-tags">
+				    <span class="project-tag">NLP</span>
+				    <span class="project-tag">LangChain</span>
+				    <span class="project-tag">TextRank</span>
+				    <span class="project-tag">Transformers</span>
+				    <span class="project-tag">YouTube API</span>
+				  </div>
+				  <div class="project-actions">
+				    <a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" target="_blank" rel="noopener noreferrer">Project Files</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer" aria-label="Open CineScope GitHub repository" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer">CineScope</a></h3>
+				  <p>Built a content-based recommendation and analytics project using IMDb data to uncover viewing trends and personalize suggestions by genre, ratings, and release year.</p>
+				  <div class="project-tags">
+				    <span class="project-tag">Python</span>
+				    <span class="project-tag">Recommendation Systems</span>
+				    <span class="project-tag">Analytics</span>
+				  </div>
+				  <div class="project-actions">
+				    <a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer">GitHub</a>
+				  </div>
 				</div>
 			  </div>
 			</div>
@@ -521,43 +692,6 @@
 	  </div>
     </section>
 
-	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 <section class="ftco-section ftco-hireme margin-top" style="position: relative; background-image: url(images/bg_1.jpg); background-size: cover; background-position: center; z-index: 1;">
   <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.4); pointer-events: none;"></div>
   <div class="container" style="position: relative; z-index: 2;">
@@ -567,7 +701,7 @@
         <div class="heading">
           <h4>I love to solve business problems &amp; uncover hidden data stories</h4>
           <br>
-          <p><a href="https://github.com/mihika123945" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+          <p><a href="https://github.com/mihika123945" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">GitHub</a></p>
         </div>
       </div>
     </div>
@@ -588,41 +722,32 @@
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="row d-flex contact-info mb-5 justify-content-center">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
+				<span class="icon-paper-plane"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Arizona,United States</p>
+			<h3 class="mb-4">Email</h3>
+	            <p><a href="mailto:mihikakubadia09@gmail.com">mihikakubadia09@gmail.com</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
+				<span class="icon-linkedin"></span>
           		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+1 (520)204-8640</a></p>
+			<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="https://www.linkedin.com/in/mihika-kubadia/" target="_blank" rel="noopener noreferrer">Profile</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
+				<span class="ion-social-github"></span>
           		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p>mihikakubadia09@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1b5sMxV3jJ1tCpKteAuOiSF7pxv0yvw2m/view?usp=drive_link">Resume</a></p>
+			<h3 class="mb-4">GitHub</h3>
+	            <p><a href="https://github.com/mihika123945" target="_blank" rel="noopener noreferrer">Profile</a></p>
 	          </div>
           </div>
 
@@ -630,18 +755,16 @@
 			<br>
 			<br>
 			<div class="row justify-content-center">
-				<!-- <div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div> -->
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/mihika-kubadia/"><span class="icon-linkedin"></span></a></li>  
-				      <li class="ftco-animate"><a href="https://www.instagram.com/_.mihika._09?igsh=bjV4bHcwMjNneXhm&utm_source=qr"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate normal-txt">Find me on</li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/mihika-kubadia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin"></span></a></li>
+				      <li class="ftco-animate"><a href="https://github.com/mihika123945" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="ion-social-github"></span></a></li>
 					</ul>
 				<br>
 		   </div>
+   </div>
+   </div>
    </div>
  </section>
 
@@ -654,7 +777,7 @@
 			<div class="col-md-12 text-center">
   
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a> -->
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
