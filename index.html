@@ -203,6 +203,17 @@
   padding: 12px;
 }
 
+.project-subtitle {
+  color: #ffbd39;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.blog-entry .text p {
+  line-height: 1.55;
+}
+
 @media (max-width: 767.98px) {
   #typing-animation {
     white-space: normal;
@@ -566,7 +577,8 @@
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="https://mihika123945.github.io/ORPA-Dashboard/" target="_blank" rel="noopener noreferrer">ORPA Dashboard</a></h3>
-                <p><strong>AI-Driven Workforce Planning and Analytics Dashboard.</strong> Interactive workforce planning platform integrating supply, demand, pipeline, capacity analysis, dashboards, and AI-assisted querying.</p>
+                <div class="project-subtitle">AI-Driven Workforce Planning and Analytics Dashboard</div>
+                <p>Interactive workforce planning platform integrating supply, demand, project, pipeline, and capacity data to identify staffing gaps and support workforce planning decisions.</p>
                 <div class="project-tags">
                   <span class="project-tag">React</span>
                   <span class="project-tag">Vite</span>
@@ -585,18 +597,23 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate featured-project">
           	<div class="blog-entry justify-content-end">
-              <div aria-label="SERVES+ Data Visualization Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
-              </div>
+              <a href="https://viz.datascience.arizona.edu/content/12b6105c-1534-4f84-8f58-3f3e88f0d3d4/" target="_blank" rel="noopener noreferrer" aria-label="Open SERVES+ live dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+              </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading">SERVES+ Data Visualization Dashboard</h3>
-                <p>Processed 4,000+ REDCap records through an end-to-end pipeline with rule-based task generation, status classification, and an interactive monitoring dashboard that reduced manual effort by approximately 60%.</p>
+                <h3 class="heading"><a href="https://viz.datascience.arizona.edu/content/12b6105c-1534-4f84-8f58-3f3e88f0d3d4/" target="_blank" rel="noopener noreferrer">SERVES+ Data Visualization Dashboard</a></h3>
+                <p>Built an end-to-end data and monitoring workflow for 4,000+ REDCap records, including rule-based task generation, status classification, automated reporting, and an interactive dashboard that reduced manual monitoring effort by approximately 60%.</p>
                 <div class="project-tags">
+                  <span class="project-tag">Python</span>
                   <span class="project-tag">REDCap</span>
+                  <span class="project-tag">REDCap API</span>
                   <span class="project-tag">Data Pipelines</span>
-                  <span class="project-tag">Dashboards</span>
-                  <span class="project-tag">Automation</span>
+                  <span class="project-tag">Data Visualization</span>
+                  <span class="project-tag">Analytics</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://viz.datascience.arizona.edu/content/12b6105c-1534-4f84-8f58-3f3e88f0d3d4/" target="_blank" rel="noopener noreferrer">Live Dashboard</a>
                 </div>
               </div>
             </div>
@@ -607,10 +624,13 @@
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="https://www.mdpi.com/2673-4591/59/1/144" target="_blank" rel="noopener noreferrer">Brain Tumor MRI Classification</a></h3>
-                <p>Built a TensorFlow/Keras MRI classification system using ResNet-50, VGG-16, and Inception-V3, with 99.93% reported classification accuracy and Best Paper recognition.</p>
+                <p>Developed deep learning models for brain tumor MRI classification using ResNet-50, VGG-16, and Inception-V3, achieving 99.93% reported classification accuracy. Published research with Best Paper recognition at RAiSE-2023.</p>
                 <div class="project-tags">
+                  <span class="project-tag">Python</span>
                   <span class="project-tag">TensorFlow</span>
                   <span class="project-tag">Keras</span>
+                  <span class="project-tag">Deep Learning</span>
+                  <span class="project-tag">CNN</span>
                   <span class="project-tag">ResNet-50</span>
                   <span class="project-tag">VGG-16</span>
                   <span class="project-tag">Inception-V3</span>
@@ -624,19 +644,21 @@
         </div>
 
 	<br>
-		<div class="row d-flex">
+		<div class="row d-flex justify-content-center">
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<div aria-label="Bayesian Climate Reconstruction" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
 				</div>
 				<div class="text mt-3 float-right d-block">
 				  <h3 class="heading">Bayesian Climate Reconstruction</h3>
-				  <p>Reconstructed climate signals using R and Stan/brms with 230 tree-ring proxies, a spatial point-to-pixel workflow, R squared of 0.97, and a blind hindcast of the 1913 volcanic cooling event.</p>
+				  <p>Developed a Bayesian climate reconstruction workflow using 230 tree-ring proxy records, spatial point-to-pixel mapping, and probabilistic modeling, achieving R² of 0.97 and successfully hindcasting the 1913 volcanic cooling event.</p>
 				  <div class="project-tags">
 				    <span class="project-tag">R</span>
 				    <span class="project-tag">Stan</span>
 				    <span class="project-tag">brms</span>
 				    <span class="project-tag">Bayesian Modeling</span>
+				    <span class="project-tag">Statistical Analysis</span>
+				    <span class="project-tag">Spatial Data</span>
 				  </div>
 				</div>
 			  </div>
@@ -647,34 +669,18 @@
 				</a>
 				<div class="text mt-3 float-right d-block">
 				  <h3 class="heading"><a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" target="_blank" rel="noopener noreferrer">Educational Videos in Focus</a></h3>
-				  <p>Created an NLP workflow for educational video summarization using speech-to-text, LangChain, TextRank, transformer summarization, clustering, and YouTube API integration.</p>
+				  <p>Built an NLP pipeline combining speech-to-text, TextRank, transformer-based summarization, clustering, LangChain, and the YouTube API to improve educational video analysis efficiency by approximately 45%.</p>
 				  <div class="project-tags">
+				    <span class="project-tag">Python</span>
 				    <span class="project-tag">NLP</span>
 				    <span class="project-tag">LangChain</span>
 				    <span class="project-tag">TextRank</span>
 				    <span class="project-tag">Transformers</span>
+				    <span class="project-tag">Clustering</span>
 				    <span class="project-tag">YouTube API</span>
 				  </div>
 				  <div class="project-actions">
 				    <a href="https://drive.google.com/drive/folders/1uZb7BEXpteJMrrZEJzGJJum5u-o-Y3WA?usp=sharing" target="_blank" rel="noopener noreferrer">Project Files</a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer" aria-label="Open CineScope GitHub repository" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer">CineScope</a></h3>
-				  <p>Built a content-based recommendation and analytics project using IMDb data to uncover viewing trends and personalize suggestions by genre, ratings, and release year.</p>
-				  <div class="project-tags">
-				    <span class="project-tag">Python</span>
-				    <span class="project-tag">Recommendation Systems</span>
-				    <span class="project-tag">Analytics</span>
-				  </div>
-				  <div class="project-actions">
-				    <a href="https://github.com/mihika123945/Cinescope" target="_blank" rel="noopener noreferrer">GitHub</a>
 				  </div>
 				</div>
 			  </div>
